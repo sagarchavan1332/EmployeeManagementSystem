@@ -28,7 +28,4 @@ public class EmployeeController {
                 ApiResponse.success(response, "Employee created successfully")
         );
     }
-
-    //added
-
 }
