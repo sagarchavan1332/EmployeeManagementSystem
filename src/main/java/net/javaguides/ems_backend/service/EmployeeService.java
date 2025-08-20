@@ -1,12 +1,13 @@
 package net.javaguides.ems_backend.service;
 
-import net.javaguides.ems_backend.dto.EmployeeDto;
+import net.javaguides.ems_backend.dto.request.EmployeeRequest;
+import net.javaguides.ems_backend.dto.response.EmployeeResponse;
 
 public interface EmployeeService {
 
-    EmployeeDto createEmployee(EmployeeDto employeeDto);
+    EmployeeResponse createEmployee(EmployeeRequest request);
 
-    EmployeeDto getEmployeeById(Long Id);
+    EmployeeResponse getEmployeeById(Long Id);
 
 
 }

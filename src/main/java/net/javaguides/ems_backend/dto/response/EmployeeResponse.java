@@ -1,4 +1,4 @@
-package net.javaguides.ems_backend.dto;
+package net.javaguides.ems_backend.dto.response;
 
 
 import lombok.AllArgsConstructor;
@@ -8,8 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeDto {
-
+public class EmployeeResponse {
     private Long id;
     private String firstName;
     private String lastName;

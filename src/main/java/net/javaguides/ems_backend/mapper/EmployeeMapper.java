@@ -1,12 +1,12 @@
 package net.javaguides.ems_backend.mapper;
 
-import net.javaguides.ems_backend.dto.EmployeeDto;
+import net.javaguides.ems_backend.dto.response.EmployeeResponse;
 import net.javaguides.ems_backend.entity.Employee;
 
 public class EmployeeMapper {
 
-    public static EmployeeDto mapToEmployeeDto(Employee employee) {
-        EmployeeDto employeeDto = new EmployeeDto();
+    public static EmployeeResponse mapToEmployeeDto(Employee employee) {
+        EmployeeResponse employeeDto = new EmployeeResponse();
         employeeDto.setId(employee.getId());
         employeeDto.setFirstName(employee.getFirstName());
         employeeDto.setLastName(employee.getLastName());
@@ -14,7 +14,7 @@ public class EmployeeMapper {
         return employeeDto;
     }
 
-    public static Employee mapToEmployee(EmployeeDto employeeDto) {
+    public static Employee mapToEmployee(EmployeeResponse employeeDto) {
         Employee employee = new Employee();
         employee.setId(employeeDto.getId());
         employee.setFirstName(employeeDto.getFirstName());
